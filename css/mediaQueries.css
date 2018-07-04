@@ -66,5 +66,12 @@
 		grid-template-columns: 320px;
 		grid-template-rows: auto-fill;
 	}
-
+	.item-author,
+	.item-subscribe,
+	.aside-item-finding,
+	.aside-tags,
+	.item-reviews{
+		margin: 5px auto 5px auto;
+		width: 100%;
+	}
 }
