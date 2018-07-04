@@ -1,0 +1,187 @@
+aside {
+	display: flex;
+	flex-direction: column;
+}
+
+.item-author,
+.item-subscribe,
+.aside-item-finding,
+.aside-tags,
+.item-reviews{
+	background-color: 	rgba(255,255,0, .5);
+	align-self: center;
+	margin: 5px 20px 5px 40px;
+	text-align: center;
+	font: bold 100% "century gothic", arial, sans-serif;
+	border: 4px dashed brown;
+	width: 95%;
+	border-radius: 30px;
+	overflow: hidden;
+	color: brown;
+}
+
+.item-author img {
+	height: 350px;
+	border: 2px solid black;
+	margin: 0;
+}
+
+.item-author h5 {
+	margin: 5px 0 5px 0;
+	padding-bottom: 10px;
+	font-size: 20px;
+}
+
+.item-description-author {
+	position: relative;
+	text-align: justify;
+	background-color: white;
+	width: 90%;
+	margin: auto;
+	padding: 5px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	border-radius: 15px;
+	color: black;
+}
+.item-description-author:after {
+    content:'';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -30px;
+    width: 0;
+    height: 0;
+    border-bottom: solid 30px white;
+    border-left: solid 30px transparent;
+    border-right: solid 30px transparent;
+}
+
+.item-description-author h5{
+	align-self: flex-start;
+	padding: 0;
+	margin-left: 10px;
+	opacity: .6;
+}
+
+.item-description-author p {
+	margin: 0 10px 10px 10px;
+	opacity: .6;
+}
+
+.aside-item-social{
+	border: solid 2px brown;
+	width: 90%;
+	margin: 15px auto 15px auto;
+	border-radius: 10px;
+	background-color: rgba(255, 152,0,.8);
+}
+
+.item-subscribe form{
+	display: flex;
+	flex-direction: column;
+	padding: 0 12px 12px 12px;
+}
+
+.item-subscribe input[type="text"] {
+	flex: 1;
+	font: normal 100% "Cooper", arial, sans-serif;
+    padding: 12px;
+    font-size: 16px;
+    outline: none;
+    border: 3px solid brown;
+    border-radius: 20px;
+  	width: 90%;
+  	min-width: 120px;
+  	margin: 5px auto 5px auto;
+}
+
+.item-subscribe .sub-customer-info{
+	margin: 5px auto 5px auto;
+	font: normal 100% "Cooper", arial, sans-serif;
+    padding: 12px;
+    font-size: 16px;
+    outline: none;
+    border: 3px solid brown;
+    border-radius: 20px;
+  	width: 90%;
+  	min-width: 120px;
+  	background-color: red;
+  	color: white;
+  	cursor: pointer;
+}
+
+.item-subscribe .sub-customer-info:hover {
+	animation-name: subscribeBut;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes subscribeBut {
+    0%   {background-color: red;}
+    50%  {background-color: rgba(255, 152,0,.8);}
+    100% {background-color: red;}
+}
+
+.aside-item-finding form {
+	margin: 0 auto 10px auto;
+	width: 90%;
+}
+
+.aside-tags .tags ul{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	flex-direction: row;
+	list-style-type: none;
+	padding: 0 20px 0 20px;
+}
+
+.aside-tags .tags ul li {
+	padding: 12px;
+	background-color: rgb(255,140,0);
+	color: brown;
+	border-radius: 8px;
+	border: 3px solid black;
+	margin: 2px;
+	font: normal 100% "Cooper", arial, sans-serif;
+}
+
+.item-reviews .customer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 12px 0 12px 0;
+}
+
+.item-reviews .customer:nth-child(odd){
+	border-bottom: 4px dashed brown;
+	border-top: 4px dashed brown;
+}
+
+.item-reviews .customer img {
+	height: 64px;
+	width: 64px;
+	background-color: #fff;
+	border-radius: 64px;
+}
+
+.item-reviews .customer .review-customer {
+	background-color: #fff;
+	padding: 0 24px 0 24px;
+	border-radius: 24px;
+	font-size: 24px;
+	width: 75%;
+}
+
+.customer .review-customer h5 {
+	margin: 6px 0 0 0;
+}
+
+.review-customer  p {
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 9em;
+    display: block;
+    overflow: hidden
+}

@@ -1,0 +1,22 @@
+.item-social a ,
+.footer-item-social a, 
+.aside-item-social a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-size: 2em;
+}
+
+.item-social a:hover,
+.footer-item-social a:hover, 
+.aside-item-social a:hover {
+    animation-name: socialBtns;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes socialBtns {
+    0%   {color: white;}
+    50%  {color: #ffcc00;}
+    100% {color: white;}
+}

@@ -1,0 +1,14 @@
+h1, h2, h3, h4 {
+	font: normal 180% "Cooper", arial, sans-serif;
+	margin: 15px 0 20px 0; 
+	color: white;
+}
+
+main h3, 
+aside h3{
+	color: brown;
+	padding: 5px 10px 5px 30px;
+	margin: 15px 0 15px 0;
+	outline: groove;
+	background-color: rgba(255, 152,0,.8);
+}
