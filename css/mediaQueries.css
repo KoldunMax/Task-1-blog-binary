@@ -53,19 +53,6 @@
 		order: 3;
 		padding: 10px auto 10px auto;
 	}
-}
-
-@media all and (max-width: 445px) {
-	.item-finding input[type="text"] {
-		width: 120px
-	}
-}
-@media all and (max-width: 320px) {
-	.wrapper{
-		max-width: 320px;
-		grid-template-columns: 320px;
-		grid-template-rows: auto-fill;
-	}
 	.item-author,
 	.item-subscribe,
 	.aside-item-finding,
@@ -73,5 +60,39 @@
 	.item-reviews{
 		margin: 5px auto 5px auto;
 		width: 100%;
+	}
+}
+
+@media all and (max-width: 425px) {
+	.item-finding input[type="text"] {
+		width: 120px
+	}
+
+	.wrapper{
+		max-width: 425px;
+		grid-template-columns: 425px;
+	}
+
+}
+
+@media all and (max-width: 375px) {
+	.wrapper{
+		max-width: 375px;
+		grid-template-columns: 375px;
+	}
+}
+
+@media all and (max-width: 320px) {
+	.wrapper{
+		max-width: 320px;
+		grid-template-columns: 320px;
+	}
+
+	.item-author img {
+		height: 300px;
+	}
+
+	.item-reviews .customer .review-customer{
+		font-size: 16px;
 	}
 }
