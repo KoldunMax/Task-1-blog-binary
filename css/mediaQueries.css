@@ -60,3 +60,11 @@
 		width: 120px
 	}
 }
+@media all and (max-width: 320px) {
+	.wrapper{
+		max-width: 320px;
+		grid-template-columns: 320px;
+		grid-template-rows: auto-fill;
+	}
+
+}
