@@ -23,6 +23,7 @@
 
 
 .film {
+	overflow: hidden;
 	background-color: white;
 	border: solid grey 2px;
 	margin-bottom: 20px;
@@ -33,7 +34,7 @@
 }
 
 .film:hover img{
-	transform: scale(0.95);
+	transform: scale(1.05);
 }
 
 .text-film-cont {
