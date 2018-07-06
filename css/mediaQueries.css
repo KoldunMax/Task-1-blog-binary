@@ -1,4 +1,4 @@
-@media all and (min-width: 768px) and (max-width: 1024px){
+@media all (max-width: 1280px){
 	.item-nameBlog h3 {
 	  	font-size: 130%;
 	  }
@@ -8,6 +8,7 @@
 	.item-nameBlog h3 {
 		font-size: 100%;
 	}
+
 	footer .helps-link.item-social {
 		display: block;
 	}
@@ -86,6 +87,12 @@
 		width: 120px
 	}
 
+  	.top-films {
+		grid-template-columns: repeat(auto-fill, minmax(150px, 250px));
+	}
+	.film img {
+		height: 300px;
+	}
 	.wrapper{
 		max-width: 425px;
 		grid-template-columns: 425px;
